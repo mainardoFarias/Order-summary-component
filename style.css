@@ -1,0 +1,240 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    /*Colors*/
+
+        /*Primary*/
+        --pale-blue: #e0e8ff;
+        --bright-blue: #3829e0;
+
+        /*Neutral*/
+        --very-pale-blue: #f5f7ff;
+        --desaturated-blue: #7280a7;
+        --dark-blue: #1f2f56;
+    
+    
+    /*Typography*/
+    /* font-family: 'Red Hat Display', sans-serif; */
+    --font-weight1: 500;
+    --font-weight2: 700;
+    --font-weight3: 900;
+    
+}
+
+body {
+    background-image: url(./assets/pattern-background-desktop.svg);  
+    background-color: #c5d0f1;
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+}
+
+.img-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.img-bg img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.para1 {
+    color: var(--dark-blue);
+    text-align: center;
+    margin: 1rem;
+}
+
+.para1 h2 {
+    font-weight:var(--font-weight3);
+}
+
+.para2 {
+    color: var(--desaturated-blue);
+    text-align: center;
+    font-size: 16px;
+    margin: 1rem;
+}
+
+.para2 p {
+    font-weight: var(--font-weight1);
+}
+
+.plan-status {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    margin: 1rem;
+}
+
+.plan {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+.plan p {
+    line-height: 1.4rem;
+    color: var(--desaturated-blue);
+    font-size: 16px;
+    
+}
+
+.plan span {
+    font-weight: var(--font-weight2);
+    color: var(--dark-blue);
+}
+
+.change-plan a {
+    color: var(--bright-blue);
+    font-weight: var(--font-weight2);
+    font-size: 1rem;
+}
+
+.change-plan a:hover {
+    animation: change-plan-btn-animation 0.3s ease-in-out;
+}
+
+@keyframes change-plan-btn-animation {
+    0% {
+        font-size: 1rem;
+    }
+
+    50%{
+        font-size: 1.05rem;
+    }
+
+    100%{
+        font-size: 1rem;
+    }
+}
+
+.payment-btn {
+    width: 85%;
+    margin: 1rem;
+}
+
+.payment-btn #pay-btn {
+    background-color: var(--bright-blue);
+    color: var(--pale-blue);
+    font-weight: var(--font-weight2);
+    font-size: 1rem;
+    width: 100%;    
+    height: 2.8rem;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+#pay-btn:hover {
+    cursor: pointer;
+    background-color: #291cb9;
+    border: 1px solid #291cb9;
+}
+
+.cancel-order {
+    margin: 0.5rem auto 2rem auto;
+}
+
+#cancel-btn {
+    background-color: var(--very-pale-blue);
+    color: var(--desaturated-blue);
+    font-weight: var(--font-weight3);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+#cancel-btn:hover {
+    cursor: pointer;
+    color: #576280;
+}
+
+footer {
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+
+@media (max-width: 1033px) {
+    .body {
+        background-image: url(./assets/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        width: 40%;
+    }
+}
+
+@media (max-width: 775px) {
+    .body {
+        background-image: url(./assets/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 620px) {
+    .body {
+        background-image: url(./assets/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        width: 70%;
+    }
+}
+
+@media (max-width: 463px) {
+    .body {
+        background-image: url(./assets/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 375px) {
+    .body {
+        background-image: url(./assets/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
+    .container {
+        width: 90%;
+    }
+}
