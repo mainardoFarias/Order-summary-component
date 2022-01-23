@@ -1,6 +1,6 @@
 # Order-summary-component
 
-Olá a todos. Este projeto é um simples componente em formato de card que simula o resumo de compra de uma assinatura de streaming de música em .<br>
+Olá a todos. Este projeto é um simples componente em formato de card que simula o resumo de compra de uma assinatura de streaming de música<br>
  feito apenas com HTML e CSS
 ## Contents
 
